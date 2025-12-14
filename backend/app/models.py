@@ -3,7 +3,7 @@ from datetime import datetime
 
 db = SQLAlchemy()
 
-# Association tables
+
 likes = db.Table(
     "likes",
     db.Column("user_id", db.Integer, db.ForeignKey("user.id")),

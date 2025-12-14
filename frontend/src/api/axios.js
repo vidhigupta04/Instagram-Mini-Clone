@@ -17,11 +17,11 @@ api.interceptors.request.use(
   (error) => Promise.reject(error)
 );
 
-// Handle response (DO NOT redirect here)
+// Handle response
 api.interceptors.response.use(
   (response) => response,
   (error) => {
-    // Just pass error to component
+
     return Promise.reject(error);
   }
 );

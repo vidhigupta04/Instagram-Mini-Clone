@@ -145,7 +145,6 @@ def create_app():
     @jwt_required(optional=True)
     def add_comment(post_id):
 
-    # ✅ Handle preflight request
         if request.method == "OPTIONS":
             return "", 200
 
